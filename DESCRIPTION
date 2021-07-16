@@ -1,15 +1,17 @@
-Package: temppkg
-Title: What the Package Does (One Line, Title Case)
+Package: marinemammalrescue
+Title: Sample Data From Marine Mammal Rescue
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jesse",
+           family = "Mostipak",
            role = c("aut", "cre"),
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: This is a small sample dataset from the Marine Mammal Rescue site (`https://mmrpatients.org/).  
+    Feel free to use this data to explore and learn more about the animals rescued, 
+    rehabilitated, and released by MMR. Please consider tagging Marine Mammal Rescue 
+    in any content you create using this dataset. 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
