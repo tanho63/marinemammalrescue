@@ -1,0 +1,22 @@
+#' Admission and release data for 300 marine mammals, collected by the
+#' Marine Mammal Rescue (MMR) organization and scraped from `https://mmrpatients.org/`
+#' on 2021-07-01
+#'
+#' @format A dataframe with 300 rows and 13 variables:
+#' \describe{
+#'   \item{id}{indexing id}
+#'   \item{patient_id}{id assigned to the animal by MMR}
+#'   \item{name}{name of the animal}
+#'   \item{sex}{sex of the animal}
+#'   \item{collection_site}{location the animal was rescued from}
+#'   \item{reason_for_admit}{reasons for animal admission, multiple reasons separate by semi-colon}
+#'   \item{admit_date}{date the animal was admitted to MMR}
+#'   \item{admit_weight}{weight of the animal upon admission, in kg}
+#'   \item{release_date}{date of the animal's release}
+#'   \item{release_site}{location of the animal's release}
+#'   \item{release_weight}{weight of the animal upon release, in kg}
+#'   \item{transfer_date}{date the animal was transferred to another facility. NA means no transfer.}
+#'   \item{url}{link to the animal's page on the MMR website, contains additional data}}
+#'
+#' @source \url{https://mmrpatients.org/}
+"marine_mammals"
