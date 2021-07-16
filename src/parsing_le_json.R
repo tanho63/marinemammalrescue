@@ -1,6 +1,7 @@
 library(tidyverse)
 library(lubridate)
 library(jsonlite)
+library(here)
 
 # import JSON file, scraped from mmrpatients.org on July1, 2021
 raw_data <- read_json(here("data/sitedata.json"))
@@ -12,7 +13,7 @@ data <- raw_data %>%
   tidyr::unnest_wider(1)
 
 # a little bit of data wrangling
-data <- data %>% 
+marine_mammals <- data %>% 
   mutate(sex = as.factor(sex),
          collection_site = as.factor(collection_site),
          reason_for_admit = str_trim(reason_for_admit),
